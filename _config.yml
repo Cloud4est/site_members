@@ -1,7 +1,7 @@
 title: Cloud4est Members
 description: Members of Cloud4est
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "members.cloud4est.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://members.cloud4est.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
