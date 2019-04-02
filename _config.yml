@@ -1,5 +1,11 @@
 ---
 title: Cloud4est Members
+description: Members of Cloud4est
+baseurl: ''
+url: "https://members.cloud4est.com"
+markdown: kramdown
+plugins:
+  - jekyll-feed
 timezone: UTC
 collections:
   members:
@@ -18,9 +24,3 @@ defaults:
     type: members
   values:
     layout: member
-description: Members of Cloud4est
-baseurl: ''
-url: members.cloud4est.com
-markdown: kramdown
-plugins:
-- jekyll-feed
