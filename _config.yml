@@ -1,22 +1,26 @@
+---
 title: Cloud4est Members
-description: Members of Cloud4est
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "members.cloud4est.com" # the base hostname & protocol for your site, e.g. http://example.com
-
-# Build settings
-markdown: kramdown
-plugins:
-  - jekyll-feed
-
+timezone: UTC
 collections:
   members:
     title: Members
     output: true
     permalink: "/members/:path"
-
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
-  - scope:
-      path: ''
-      type: members
-    values:
-      layout: member
+- scope:
+    path: ''
+    type: members
+  values:
+    layout: member
+description: Members of Cloud4est
+baseurl: ''
+url: members.cloud4est.com
+markdown: kramdown
+plugins:
+- jekyll-feed
