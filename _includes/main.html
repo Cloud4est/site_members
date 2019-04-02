@@ -3,8 +3,7 @@
     {% for member in site.members %}
     <!-- url: {{ member.url }} -->
     <article class="thumb">
-      <a href="{{ member.url }}" class="image"><img src="{{ member.image }}" alt="{{ member.title }}" /></a>
-      <h2>{{ member.title }}</h2>
-      <p>{{ member.content | truncatewords: 10 }}</p>
+      <a href="{{ member.link }}" class="image"><img src="{{ member.image }}" alt="{{ member.title }}" /></a>
+      <h2>{{ member.title }}{% if member.content != null %} - <i>{{ member.content | truncatewords: 3, " " | strip_html }}</i>{% endif %}</h2>
     </article>
     {% endfor %}
